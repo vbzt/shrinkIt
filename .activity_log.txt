@@ -1,1 +1,2 @@
 [2025-01-01T05:00:15-03:00] feat: integrate WebSocket into handler
+[2025-01-03T08:16:37-03:00] mais um fix
