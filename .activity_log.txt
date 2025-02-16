@@ -5,3 +5,4 @@
 [2025-02-05T23:17:18-03:00] feat: add filtering system to middleware
 [2025-02-12T13:54:49-03:00] feat: pipe now supports webhook integration
 [2025-02-16T10:37:37-03:00] feat: repository now supports background jobs
+[2025-02-16T13:59:11-03:00] refactor: improve controller structure
