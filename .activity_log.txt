@@ -8,3 +8,4 @@
 [2025-02-16T13:59:11-03:00] refactor: improve controller structure
 [2025-02-20T09:39:06-03:00] feat(subscription): implement logging system validation
 [2025-02-23T12:07:46-03:00] fix: filter validation error resolution
+[2025-03-02T03:11:38-03:00] refactor: update provider for better consistency
