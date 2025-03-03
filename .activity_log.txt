@@ -10,3 +10,4 @@
 [2025-02-23T12:07:46-03:00] fix: filter validation error resolution
 [2025-03-02T03:11:38-03:00] refactor: update provider for better consistency
 [2025-03-02T19:15:24-03:00] feat(admin): add pagination functionality
+[2025-03-03T19:18:47-03:00] chore: bump express version
