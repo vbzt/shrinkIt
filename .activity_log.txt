@@ -128,3 +128,4 @@
 [2025-03-02T03:11:38-03:00] refactor: update provider for better consistency
 [2025-03-02T19:15:24-03:00] feat(admin): add pagination functionality
 [2025-03-03T19:18:47-03:00] chore: bump express version
+[2025-03-04T01:52:36-03:00] feat(admin): implement search functionality validation
