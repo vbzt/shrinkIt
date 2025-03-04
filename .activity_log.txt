@@ -13,3 +13,4 @@
 [2025-03-03T19:18:47-03:00] chore: bump express version
 [2025-03-04T01:52:36-03:00] feat(admin): implement search functionality validation
 [2025-03-04T03:58:51-03:00] pequeno ajuste
+[2025-03-04T12:22:51-03:00] feat(subscription): create rate limiting handler
