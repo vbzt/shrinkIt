@@ -157,3 +157,4 @@
 [2025-03-25T05:53:55-03:00] fix: patch edge case in provider
 [2025-03-25T13:03:53-03:00] chore(email): add prettier configuration
 [2025-03-25T20:39:45-03:00] style: adjust handler formatting
+[2025-03-26T08:55:58-03:00] fix(security): handle CORS error edge case
