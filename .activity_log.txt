@@ -45,3 +45,4 @@
 [2025-03-27T00:23:41-03:00] feat: add validation logic endpoint
 [2025-03-27T03:42:43-03:00] feat: integrate JWT into middleware
 [2025-03-27T16:06:51-03:00] fix(api): adjust filter for edge case
+[2025-03-27T18:54:57-03:00] feat(validation): implement rate limiting validation
