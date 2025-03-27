@@ -42,3 +42,4 @@
 [2025-03-25T20:39:45-03:00] style: adjust handler formatting
 [2025-03-26T08:55:58-03:00] fix(security): handle CORS error edge case
 [2025-03-26T21:24:47-03:00] chore(payment): add docker configuration
+[2025-03-27T00:23:41-03:00] feat: add validation logic endpoint
