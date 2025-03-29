@@ -165,3 +165,4 @@
 [2025-03-27T18:54:57-03:00] feat(validation): implement rate limiting validation
 [2025-03-28T13:21:00-03:00] chore: clean up provider
 [2025-03-28T13:43:16-03:00] feat(database): implement validation logic validation
+[2025-03-29T08:50:59-03:00] feat: enhance provider with background jobs
