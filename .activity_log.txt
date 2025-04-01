@@ -54,3 +54,4 @@
 [2025-03-31T04:21:14-03:00] feat: implement file upload with PostgreSQL
 [2025-04-01T01:43:17-03:00] pequeno ajuste
 [2025-04-01T03:35:54-03:00] fix: provider CORS error resolution
+[2025-04-01T13:53:03-03:00] feat: add rate limiting to provider
