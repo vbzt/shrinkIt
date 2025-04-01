@@ -52,3 +52,4 @@
 [2025-03-30T03:36:47-03:00] mais um fix
 [2025-03-30T13:32:54-03:00] feat(api): integrate NestJS for API endpoint
 [2025-03-31T04:21:14-03:00] feat: implement file upload with PostgreSQL
+[2025-04-01T01:43:17-03:00] pequeno ajuste
