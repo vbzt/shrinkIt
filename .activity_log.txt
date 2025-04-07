@@ -58,3 +58,4 @@
 [2025-04-06T13:24:37-03:00] feat(auth): integrate PostgreSQL for rate limiting
 [2025-04-06T19:07:33-03:00] refactor: improve interceptor structure
 [2025-04-06T20:54:44-03:00] deploy
+[2025-04-07T00:28:09-03:00] feat: implement user authentication with JWT
