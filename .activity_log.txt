@@ -182,3 +182,4 @@
 [2025-04-08T03:52:22-03:00] fix(auth): handle validation error edge case
 [2025-04-08T03:57:01-03:00] feat: integrate TypeScript into controller
 [2025-04-08T13:14:22-03:00] mais um fix
+[2025-04-08T16:34:34-03:00] feat: add error handling to module
