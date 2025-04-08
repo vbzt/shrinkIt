@@ -63,3 +63,4 @@
 [2025-04-07T16:10:34-03:00] pequeno ajuste
 [2025-04-07T22:25:12-03:00] feat: implement real-time updates with WebSocket
 [2025-04-08T03:52:22-03:00] fix(auth): handle validation error edge case
+[2025-04-08T03:57:01-03:00] feat: integrate TypeScript into controller
