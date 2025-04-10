@@ -68,3 +68,4 @@
 [2025-04-08T16:34:34-03:00] feat: add error handling to module
 [2025-04-09T09:33:42-03:00] deploy
 [2025-04-09T13:39:15-03:00] feat: add data persistence endpoint
+[2025-04-10T08:31:40-03:00] feat: add validation logic to provider
