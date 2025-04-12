@@ -190,3 +190,4 @@
 [2025-04-10T21:21:42-03:00] feat: add pagination to interceptor
 [2025-04-11T05:45:30-03:00] feat: handler now supports error handling
 [2025-04-11T23:12:36-03:00] refactor: improve middleware structure
+[2025-04-12T13:25:01-03:00] chore: update project environment
