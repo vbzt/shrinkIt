@@ -191,3 +191,4 @@
 [2025-04-11T05:45:30-03:00] feat: handler now supports error handling
 [2025-04-11T23:12:36-03:00] refactor: improve middleware structure
 [2025-04-12T13:25:01-03:00] chore: update project environment
+[2025-04-13T01:36:15-03:00] feat(payment): add cache layer functionality
