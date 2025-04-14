@@ -194,3 +194,4 @@
 [2025-04-13T01:36:15-03:00] feat(payment): add cache layer functionality
 [2025-04-13T17:47:48-03:00] feat: handler now supports rate limiting
 [2025-04-14T00:12:31-03:00] refactor: improve controller structure
+[2025-04-14T09:55:12-03:00] feat(auth): create rate limiting handler
