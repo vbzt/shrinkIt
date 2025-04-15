@@ -197,3 +197,4 @@
 [2025-04-14T09:55:12-03:00] feat(auth): create rate limiting handler
 [2025-04-14T12:10:00-03:00] feat: add validation logic endpoint
 [2025-04-15T09:09:11-03:00] feat: enhance provider with rate limiting
+[2025-04-15T20:09:34-03:00] feat: add webhook integration to guard
