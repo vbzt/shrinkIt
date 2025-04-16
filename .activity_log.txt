@@ -199,3 +199,4 @@
 [2025-04-15T09:09:11-03:00] feat: enhance provider with rate limiting
 [2025-04-15T20:09:34-03:00] feat: add webhook integration to guard
 [2025-04-16T13:56:19-03:00] feat(booking): implement API endpoint validation
+[2025-04-16T15:17:58-03:00] feat(subscription): implement pagination validation
