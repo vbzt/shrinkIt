@@ -85,3 +85,4 @@
 [2025-04-16T15:17:58-03:00] feat(subscription): implement pagination validation
 [2025-04-16T19:42:44-03:00] feat: add background jobs to middleware
 [2025-04-24T00:12:09-03:00] feat(subscription): implement filtering system validation
+[2025-04-24T03:55:51-03:00] feat(booking): implement error handling validation
