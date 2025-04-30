@@ -7,6 +7,6 @@ export class AppController {
 
   @Get('/:slug')
   getHello(): string {
-    return this.appService.getHello();
+    return this.appService.getHello()
   }
 }
