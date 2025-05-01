@@ -2,6 +2,7 @@ import { Injectable } from "@nestjs/common";
 import { PrismaService } from "src/prisma/prisma.service";
 import { CreateUserDTO } from "./dto/create-user.dto";
 import * as bcrypt from 'bcrypt';
+import { UpdateUserDTO } from "./dto/update-user.dto";
 
 @Injectable() 
 export class UserService { 
@@ -12,5 +13,30 @@ export class UserService {
     const hashedPassword = await bcrypt.hash(data.password, salt)
     const user = await this.prismaService.user.create( { data: { username: data.username, email: data.email, password:hashedPassword} } )
     return { statusCode: 201, message: "User created successfully", data: {user} }
+  }
+
+  async updateUser(id: string, data: UpdateUserDTO){ 
+    if(data.password){ 
+      const salt = await bcrypt.genSalt()
+      const hashedPassword = await bcrypt.hash(data.password, salt)
+      data.password = hashedPassword
+    }
+
+    const updatedUser = await this.prismaService.user.update( { where: { id: id }, data })
+    return { statusCode: 200, message: "User updated successfully", data: {updatedUser} }
+  }
+
+  async deleteUser(id: string){
+    const deletedUser = await this.prismaService.user.delete( { where: { id } })
+    return { statusCode: 200, message: "User deleted successfully", data: {deletedUser} }
+
+  }
+
+
+
+
+  findUserById = async (id: string) => { 
+    const user = await this.prismaService.user.findUnique({ where: { id: id } })
+    return user
   }
 } 
