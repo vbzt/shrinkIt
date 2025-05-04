@@ -11,8 +11,17 @@ export class UserService {
   async createUser(data: CreateUserDTO){ 
     const salt = await bcrypt.genSalt()
     const hashedPassword = await bcrypt.hash(data.password, salt)
-    const user = await this.prismaService.user.create( { data: { username: data.username, email: data.email, password:hashedPassword} } )
-    return { statusCode: 201, message: "User created successfully", data: {user} }
+    const token = crypto.randomUUID()
+    const tokenExpiresAt = new Date(Date.now() + 60 * 60 * 1000)
+    const user = await this.prismaService.user.create( { data: { username: data.username, email: data.email, password:hashedPassword, tokenExpiresAt, confirmationToken: token} } )
+    return { statusCode: 201, message: "User created successfully", data: {
+      user: {
+        id: user.id,
+        username: user.username,
+        email: user.email,
+        emailConfirmed: user.emailConfirmed,
+      },
+    } }
   }
 
   async updateUser(id: string, data: UpdateUserDTO){ 
@@ -31,9 +40,6 @@ export class UserService {
     return { statusCode: 200, message: "User deleted successfully", data: {deletedUser} }
 
   }
-
-
-
 
   findUserById = async (id: string) => { 
     const user = await this.prismaService.user.findUnique({ where: { id: id } })
