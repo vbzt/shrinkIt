@@ -14,14 +14,7 @@ export class UserService {
     const token = crypto.randomUUID()
     const tokenExpiresAt = new Date(Date.now() + 60 * 60 * 1000)
     const user = await this.prismaService.user.create( { data: { username: data.username, email: data.email, password:hashedPassword, tokenExpiresAt, confirmationToken: token} } )
-    return { statusCode: 201, message: "User created successfully", data: {
-      user: {
-        id: user.id,
-        username: user.username,
-        email: user.email,
-        emailConfirmed: user.emailConfirmed,
-      },
-    } }
+    return { message: "User created successfully", data: { user } }
   }
 
   async updateUser(id: string, data: UpdateUserDTO){ 
@@ -32,12 +25,12 @@ export class UserService {
     }
 
     const updatedUser = await this.prismaService.user.update( { where: { id: id }, data })
-    return { statusCode: 200, message: "User updated successfully", data: {updatedUser} }
+    return { message: "User updated successfully", data: {updatedUser} }
   }
 
   async deleteUser(id: string){
     const deletedUser = await this.prismaService.user.delete( { where: { id } })
-    return { statusCode: 200, message: "User deleted successfully", data: {deletedUser} }
+    return { message: "User deleted successfully", data: {deletedUser} }
 
   }
 
