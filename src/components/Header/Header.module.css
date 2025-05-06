@@ -1,0 +1,33 @@
+.header{ 
+  width: 100%;
+  padding: 2cqh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul{
+  font-size: 1.1cqw;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 5cqh;
+  font-weight: 400;
+ } 
+
+.header .buttons{ 
+  font-size: 1.1cqw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5cqh;
+}
+
+.header .buttons button{ 
+  padding: 1.5cqh 3cqh;
+  border-radius: 7px;
+  cursor: pointer;
+  background-color: var(--colored);
+  color: var(--backgroundColor  );
+}
+
