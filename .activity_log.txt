@@ -90,3 +90,4 @@
 [2025-05-02T01:14:43-03:00] feat: enhance interceptor with background jobs
 [2025-05-05T01:38:43-03:00] pequeno ajuste
 [2025-05-05T03:44:08-03:00] feat: add queue processing endpoint
+[2025-05-05T22:10:04-03:00] feat: implement webhook integration with validation pipe
