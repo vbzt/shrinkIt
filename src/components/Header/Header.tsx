@@ -5,7 +5,7 @@ import styles from './Header.module.css'
 export default function Header() {
   return (
     <header className={styles.header}>
-      <Image src={'/logo.svg'} alt='ShrinkIt logo' width={100} height={50}></Image>
+      <Image src={'/logo.svg'} alt='ShrinkIt logo' width={130} height={50}></Image>
       <nav className={styles.nav}>
         <ul>
           <li>
@@ -20,11 +20,14 @@ export default function Header() {
           <li>
             <a href="/report">Report URL</a>
           </li>
+          <li>
+            <a href="/qrcode">Generate QR Code</a>
+          </li>
         </ul>
       </nav>
       <div className={styles.buttons}>
-        <a href="/register">Create account</a>
-        <a href="/login"><button>Login</button></a>
+        <a href="/login">Login</a>
+        <a href="/register"><button>Create account</button></a>
       </div>
 
     </header>
