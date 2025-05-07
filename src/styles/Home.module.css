@@ -1,27 +1,11 @@
-.main{ 
+.hero{ 
+  width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column
 }
-
 
 .introduction{ 
-  width: 50%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 2cqh;
+  width: 60%;
 }
 
-.introduction h1{ 
-  font-size: 5cqh;
-  text-align: justify;  
-}
-
-.introduction p{ 
-  font-weight: 600;
-  font-size: .9em;
-  width: 100%;
-  text-align: justify;
-}
