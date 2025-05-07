@@ -3,3 +3,38 @@
   flex-direction: column;
   gap: 2cqh;
 }
+
+.switch{ 
+  font-family: "Barlow";
+}
+
+.inputContainer{
+  display: flex;
+  flex-direction: column; 
+  gap: 1cqh;
+}
+
+.inputContainer input{ 
+  width: 100%;
+  padding: 1.1cqh;
+  border: 2px solid #e4e4e4;
+  border-radius: 7px;
+}
+
+.inputContainer input:focus{ 
+  border: 2px solid var(--colored);
+}
+
+.inputContainer button{ 
+  background-color: var(--colored);
+  color: var(--backgroundColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 7px;
+  padding: 1.5cqh;
+  
+}
