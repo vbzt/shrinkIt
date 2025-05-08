@@ -1,35 +1,40 @@
-import React from 'react'
-import  Image  from 'next/image'
-import styles from './Header.module.css'
+import React from 'react';
+import Image from 'next/image';
+import styles from './Header.module.css';
+import { useRouter } from 'next/router';
+import ActiveLink from './ActiveLink'
 
 export default function Header() {
+  const router = useRouter();
+
   return (
     <header className={styles.header}>
-      <Image src={'/logo.svg'} alt='ShrinkIt logo' width={130} height={50}></Image>
+      <Image src={'/logo.svg'} alt="ShrinkIt logo" width={130} height={50} />
       <nav className={styles.nav}>
         <ul>
           <li>
-            <a href="/">Shortener</a>
+            <ActiveLink href="/">Shortener</ActiveLink>
           </li>
           <li>
-            <a href="/unshorten">Unshorten URL</a>
+            <ActiveLink href="/unshorten">Unshorten URL</ActiveLink>
           </li>
           <li>
-            <a href="/clicks">Click Counter</a>
+            <ActiveLink href="/clicks">Click Counter</ActiveLink>
           </li>
           <li>
-            <a href="/report">Report URL</a>
+            <ActiveLink href="/report">Report URL</ActiveLink>
           </li>
           <li>
-            <a href="/qrcode">Generate QR Code</a>
+            <ActiveLink href="/qrcode">Generate QR Code</ActiveLink>
           </li>
         </ul>
       </nav>
       <div className={styles.buttons}>
-        <a href="/login">Login</a>
-        <a href="/register"><button>Create account</button></a>
+        <ActiveLink href="/auth/login">Login</ActiveLink>
+        <ActiveLink href="/auth/register">
+          <button>Create account</button>
+        </ActiveLink>
       </div>
-
     </header>
-  )
+  );
 }
