@@ -1,6 +1,8 @@
 import { forwardRef, useState, ChangeEvent } from "react";
 import styles from './Input.module.css'
 import { FormControlLabel, FormGroup, Switch } from "@mui/material";
+import CustomSwitch from "../CustomSwitch/CustomSwitch";
+import ShortenedUrl from "../shortenedUrl/ShortenedUrl";
 
 interface inputProps {
   label: string;
@@ -29,52 +31,46 @@ const Input = forwardRef( ( { label, customSlug }: inputProps  , ref) => {
     e.preventDefault()
     console.log(url, slug)
   }
-
+  
   return (
-    <form onSubmit={handleSubmit} className={styles.form} action="">
-      <label className={styles.label} htmlFor="url">{label}</label>
-      <div className={styles.inputContainer}>
-        <input
-          value={url}
-          onChange={handleUrlChange} 
-          type="text"
-          id="url"
-          name="url"
-          placeholder="https://example.com"
-          required
-        />
-        {customSlug &&
-        <>
-          <FormGroup>
-            <FormControlLabel
-              onChange={handleSwitchToggle}
-              disableTypography = {true }
-              className={styles.switch}
-              defaultChecked = {false}
-              control={<Switch />}
-              label="Custom slug"
-            />
-          </FormGroup>
-          {
-            customSlugSwitch &&
-            <>
-              <input
-                value={slug}
-                onChange={handleSlugChange}
-                type="text"
-                id="customSlug"
-                name="customSlug" 
-                placeholder="https://shrinkit.com/customSlug"
-                required
-              />
-            </>
+    <>
+      <form onSubmit={handleSubmit} className={styles.form} action="">
+        <label className={styles.label} htmlFor="url">{label}</label>
+        <div className={styles.inputContainer}>
+          <input
+            value={url}
+            onChange={handleUrlChange} 
+            type="text"
+            id="url"
+            name="url"
+            placeholder="https://example.com"
+            required
+          />
+          {customSlug &&
+          <>
+            <CustomSwitch customSlugSwitch = {customSlugSwitch} handleSwitchToggle={handleSwitchToggle}></CustomSwitch>
+          
+            {
+              customSlugSwitch &&
+                <input
+                  value={slug}
+                  onChange={handleSlugChange}
+                  type="text"
+                  id="customSlug"
+                  name="customSlug" 
+                  placeholder="https://shrinkit.com/customSlug"
+                  required
+                />
+            }
+          </>
           }
-        </>
-        }
-
-        <button>Shrink It</button>
-      </div>
-    </form>
+  
+          <button>Shrink It</button>
+        </div>
+      </form>
+        
+      <ShortenedUrl></ShortenedUrl>
+    </>
   )
 })
 

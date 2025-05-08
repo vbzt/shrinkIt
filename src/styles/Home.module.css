@@ -2,10 +2,23 @@
   width: 100%;
   display: flex;
   align-items: center;
-  flex-direction: column
+  flex-direction: column;
+  gap: 5cqh
 }
 
 .introduction{ 
-  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3cqh;
+  width: 65%;
 }
 
+
+
+.introduction h1{ 
+  font-size: 2.3em;
+  font-weight: 600;
+  text-align: justify;
+  width: 80%;
+}

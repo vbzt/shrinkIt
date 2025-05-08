@@ -9,7 +9,7 @@
 
 .nav ul{
   padding: 0;
-  font-size: 0.95cqw;
+  font-size: 1em;
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -18,7 +18,7 @@
  } 
 
 .header .buttons{ 
-  font-size: 0.95cqw;
+  font-size: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
