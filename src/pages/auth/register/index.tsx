@@ -5,7 +5,7 @@ import FormInput from '@/components/FormInput/FormInput'
 import { ChangeEvent, useState } from 'react'
 import Image from 'next/image'
 
-const Login = () => {
+const Register = () => {
 
   const [user, setUser] = useState({})
 
@@ -28,15 +28,17 @@ const Login = () => {
         <form onSubmit={handleSubmit} className={formStyles.form}>
           <div className= {formStyles.formTitle}>
             <Image src={'/icon.svg'} alt="ShrinkIt logo" width={35} height={35} />
-            <h1>Login</h1>
+            <h1>Register</h1>
           </div>
           <div className={formStyles.formInputs}>
+            <FormInput type = 'text' label='Username' name='username' handleOnChange={handleChange} placeholder='JohnDoe123' required = {true}></FormInput>
             <FormInput type = 'text' label='Email' name='email' handleOnChange={handleChange} placeholder='johndoe@email.com' required = {true}></FormInput>
             <FormInput type = 'password' label='Password' name='password' handleOnChange={handleChange} placeholder='...' required = {true}></FormInput>
+            <FormInput type = 'password' label='Confirm Password' name='confirmPassword' handleOnChange={handleChange} placeholder='...' required = {true}></FormInput>
           </div>
           
-          <button className={formStyles.formButton} type='submit'>Login</button>
-          <p className={formStyles.formText}>Don't have an account yet? <a href="/auth/register" className='colored'>Register</a></p>
+          <button className={formStyles.formButton} type='submit'>Register</button>
+          <p className={formStyles.formText}>Already have an account? <a href="/auth/login" className='colored'>Login</a></p>
         </form>
 
       </div>
@@ -45,4 +47,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default Register
