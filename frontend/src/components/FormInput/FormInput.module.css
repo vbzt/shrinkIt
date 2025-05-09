@@ -1,0 +1,27 @@
+.formGroup{
+  display: flex;
+  flex-direction: column;
+  padding: 1cqh 0;
+  gap: 1.5cqh;
+}
+
+
+.inputLabel{
+  font-size: 1.1em;
+}
+
+
+.input{
+  font-size: 1em;
+  padding: 1cqh;
+  border: 2px solid #e4e4e4;
+  border-radius: 5px;
+}
+
+.input:focus{ 
+  border: 2px solid var(--colored)
+}
+
+.input[type='password']{ 
+  letter-spacing: 0.2cqh;
+}
