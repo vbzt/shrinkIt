@@ -10,11 +10,6 @@ import Footer from '@/components/Footer/Footer'
 export default function Home() {
   return (
     <main className={styles.main}>
-    <Head>
-      <title>ShrinkIt</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="icon" href="/icon.svg" />
-    </Head>
       
       <Header></Header>
       <section className={styles.hero}>
