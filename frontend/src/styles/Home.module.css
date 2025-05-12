@@ -22,3 +22,18 @@
   text-align: justify;
   width: 80%;
 }
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1000px) {
+
+  .introduction{ 
+    width: 85%;
+  }
+
+  .introduction h1{
+    width: 100%;
+    font-size: 1.5em;
+  }
+}

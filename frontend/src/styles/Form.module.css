@@ -45,9 +45,19 @@
   background-color: var(--colored);
   color: var(--backgroundColor);
   font-size: 1em;
-  cursor: pointer;
+  cursor: pointer;  
 }
 
 .form button:hover{ 
   filter: brightness(0.9);
+}
+
+@media screen and (max-width: 1000px){   
+  .formContainer{ 
+    padding: 0;
+  }
+
+  .form{
+    width: 100%;
+  }
 }

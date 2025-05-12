@@ -3,6 +3,8 @@ import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 interface CardProps {
   stats: string;
@@ -11,13 +13,16 @@ interface CardProps {
 }
 
 export default function OutlinedCard({ title, stats, description }: CardProps) {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm')); // Exemplo de breakpoint
+
   return (
-    <Box sx={{ minWidth: 250 }}>
+    <Box sx={{ display: 'flex', justifyContent: 'center', width: '100%' }}> {/* Centraliza o card */}
       <Card
         variant="outlined"
         sx={{
           p: 2,
-          width: 300,
+          width: isMobile ? '90%' : 300, // Largura responsiva
           height: 220,
           borderWidth: 3,
           borderRadius: 2,
@@ -33,7 +38,7 @@ export default function OutlinedCard({ title, stats, description }: CardProps) {
             {title}
           </Typography>
 
-          <Typography variant="h3" sx={{ fontWeight: 600, color: '#6D4FB5', mt: 1 }}>
+          <Typography variant={isMobile ? 'h4' : 'h3'} sx={{ fontWeight: 600, color: '#6D4FB5', mt: 1 }}> {/* Tamanho da fonte responsivo */}
             {stats}
           </Typography>
 

@@ -5,3 +5,16 @@
   justify-content: space-between;
   gap: 10cqh;
 }
+
+@media screen and (max-width: 1280px) {
+  .stats{ 
+    gap: 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .stats{ 
+    gap: 5cqh;
+    flex-direction: column;
+  }
+}
