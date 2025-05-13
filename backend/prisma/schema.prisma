@@ -26,7 +26,7 @@ model shortenUrl {
   id   String @id @default(auto()) @map("_id") @db.ObjectId
   url String
   slug String @unique
-  clickCounter Int
+  clickCounter Int @default(0)
   createdAt DateTime @default(now())
 
   userId String? @db.ObjectId
