@@ -7,7 +7,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   
   app.useGlobalPipes(new ValidationPipe( { whitelist: true, forbidNonWhitelisted: true, transform: true}))
-  const config = new DocumentBuilder().setTitle('MongoShrinkIt').setDescription('API with MongoDB + NestJS').setVersion('1.0').build()
+  const config = new DocumentBuilder().setTitle('ShrinkIt API').setDescription('API para encurtar URLs').setVersion('1.0').addBearerAuth( { type: 'http', scheme: 'bearer', bearerFormat: 'JWT' }, 'access-token').build();
   const documentFactory = () => SwaggerModule.createDocument(app, config)
   SwaggerModule.setup('api', app, documentFactory)
 

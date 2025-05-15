@@ -28,7 +28,6 @@ export class AuthService {
     if(!user) throw new UnauthorizedException("Invalid email or password")
     const isPasswordValid = await bcrypt.compare(data.password, user.password)
     if(!isPasswordValid) throw new UnauthorizedException("Invalid email or password")
-    
     if(!user.emailConfirmed) throw new ForbiddenException("User is already registered, please check your email to confirm your account")
 
     const userToken = await this.createToken(user)

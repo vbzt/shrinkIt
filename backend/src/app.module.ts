@@ -18,7 +18,8 @@ if (!resendApiKey) {
     ResendModule.forRoot({apiKey: resendApiKey,}),
     UserModule, 
     AuthModule, 
-    PrismaModule, UrlModule
+    PrismaModule, 
+    UrlModule
   ],
   controllers: [AppController],
   providers: [AppService],

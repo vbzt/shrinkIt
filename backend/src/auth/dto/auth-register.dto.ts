@@ -17,5 +17,14 @@ export class AuthRegisterDTO{
       minUppercase: 1
    })
    password: string 
+
+   @IsString()
+   @IsStrongPassword({ 
+      minLength: 8,
+      minLowercase: 1,
+      minNumbers: 1,
+      minSymbols: 1,
+      minUppercase: 1
+   })
    confirmPassword: string 
 }
