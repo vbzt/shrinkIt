@@ -1,9 +1,11 @@
 import { ConflictException, Injectable, NotFoundException } from '@nestjs/common';
 import { customAlphabet } from 'nanoid';
 import { PrismaService } from 'src/prisma/prisma.service';
-import { shortenUrlDTO } from './dto/shorten-url.dto';
+import { ShortenUrlDTO } from './dto/shorten-url.dto';
 import { UnshortenUrlDTO } from './dto/unshorten-url.dto';
 import { OpenUrlDTO } from './dto/open-url.dto';
+import * as qrcode from 'qrcode'
+import { Response } from 'express';
 
 @Injectable()
 export class UrlService {
@@ -11,7 +13,7 @@ export class UrlService {
   constructor(private readonly prismaService: PrismaService) {}
 
 
-  async createShortUrl({ customSlug, url }: shortenUrlDTO, userId: string){ 
+  async createShortUrl({ customSlug, url }: ShortenUrlDTO, userId: string){ 
     if(customSlug) { 
       const slugExists = await this.slugExists(customSlug)
       if(slugExists) throw new ConflictException('Slug already exists')
@@ -39,7 +41,12 @@ export class UrlService {
 
   // TODO: Report URL 
 
-  
+  async generateQrCode(res: Response, data: ShortenUrlDTO, userId: string){ 
+    const shortenedUrl = await this.createShortUrl(data, userId)
+    const qrCode = await qrcode.toBuffer(shortenedUrl.url, { type: 'png' })
+    res.setHeader('Content-Type', 'image/png')
+    res.send(qrCode)
+  }
 
 
   createRandomSlug = async (l = 6) => { 

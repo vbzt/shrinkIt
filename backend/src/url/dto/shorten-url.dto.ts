@@ -1,6 +1,6 @@
 import { IsOptional, IsString, Min } from "class-validator";
 
-export class shortenUrlDTO {
+export class ShortenUrlDTO {
   
   @IsOptional()
   @IsString()
