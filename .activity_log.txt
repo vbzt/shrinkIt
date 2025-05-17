@@ -94,3 +94,4 @@
 [2025-05-14T04:50:48-03:00] feat: decorator now supports API endpoint
 [2025-05-14T09:14:31-03:00] refactor(user): enhance service readability
 [2025-05-16T03:56:56-03:00] mais um fix
+[2025-05-17T13:52:10-03:00] ajustes finos
