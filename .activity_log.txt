@@ -95,3 +95,4 @@
 [2025-05-14T09:14:31-03:00] refactor(user): enhance service readability
 [2025-05-16T03:56:56-03:00] mais um fix
 [2025-05-17T13:52:10-03:00] ajustes finos
+[2025-05-17T21:00:25-03:00] chore: update project settings
