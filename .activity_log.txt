@@ -96,3 +96,4 @@
 [2025-05-16T03:56:56-03:00] mais um fix
 [2025-05-17T13:52:10-03:00] ajustes finos
 [2025-05-17T21:00:25-03:00] chore: update project settings
+[2025-05-18T13:48:29-03:00] feat: add error handling to guard
