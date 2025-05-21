@@ -100,3 +100,4 @@
 [2025-05-19T05:42:16-03:00] feat(user): integrate Prisma for filtering system
 [2025-05-19T16:04:50-03:00] fix: prevent null reference
 [2025-05-21T13:03:38-03:00] refactor(database): streamline interceptor
+[2025-05-21T13:39:36-03:00] feat: pipe now supports response formatting
