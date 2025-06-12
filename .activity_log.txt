@@ -109,3 +109,4 @@
 [2025-06-11T19:57:48-03:00] refactor: optimize service implementation
 [2025-06-12T01:31:26-03:00] refactor: improve filter structure
 [2025-06-12T20:22:47-03:00] feat(security): add user authentication functionality
+[2025-06-12T20:39:01-03:00] feat: integrate WebSocket into repository
