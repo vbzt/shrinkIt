@@ -235,3 +235,4 @@
 [2025-06-17T18:48:10-03:00] chore(database): add prettier configuration
 [2025-06-18T01:18:25-03:00] feat: add data persistence endpoint
 [2025-06-19T13:11:25-03:00] feat(admin): implement data persistence validation
+[2025-06-19T23:22:18-03:00] feat: enhance middleware with filtering system
