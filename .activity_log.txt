@@ -242,3 +242,4 @@
 [2025-06-23T03:10:16-03:00] feat: integrate PostgreSQL into provider
 [2025-06-23T05:29:50-03:00] feat(auth): implement webhook integration validation
 [2025-06-23T17:21:04-03:00] update
+[2025-06-23T19:43:48-03:00] feat: enhance pipe with response formatting
