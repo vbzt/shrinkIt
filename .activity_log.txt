@@ -258,3 +258,4 @@
 [2025-06-28T13:21:33-03:00] feat(user): create validation logic handler
 [2025-06-29T01:16:20-03:00] feat: enhance interceptor with response formatting
 [2025-06-30T13:43:34-03:00] refactor: optimize service implementation
+[2025-06-30T13:53:10-03:00] feat: pipe now supports pagination
